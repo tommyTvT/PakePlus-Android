@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1, user-scalable=no" />
+    <title>Learn in Text - 在语境中学习英语</title>
+    <script>
+      (function () {
+        var theme = 'system'
+        try {
+          var saved = JSON.parse(localStorage.getItem('learn_in_text_settings') || '{}')
+          if (saved.theme) theme = saved.theme
+        } catch (e) {}
+        var dark = theme === 'dark' || (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)
+        if (dark) document.documentElement.classList.add('dark')
+      })()
+    </script>
+    <script type="module" crossorigin src="./assets/index-NsNa3zYF.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-C9Dc2Q3W.css">
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
